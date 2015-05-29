@@ -1,6 +1,6 @@
 package com.teanNikAml.listadaptor.model;
 
-public class ItemeditTextCheckbox {
+public class ItemEditTextCheckbox {
 	
 	private String itemEdittext,itemTextView;
 	private Boolean checkboxItem;

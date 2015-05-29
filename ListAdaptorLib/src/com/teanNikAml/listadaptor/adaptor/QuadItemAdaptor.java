@@ -58,7 +58,7 @@ public class QuadItemAdaptor extends BaseAdapter {
 			
 			LayoutInflater li = (LayoutInflater) context
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			convertView = li.inflate(R.layout.quad_item_adaptor, group,
+			convertView = li.inflate(R.layout.quad_item, group,
 					false);
 			holder = new ViewHolder();
 
@@ -78,7 +78,7 @@ QuadItem quadItem = quadItemList.get(postion);
 	
 
 		holder.tv1.setText(quadItem.getItem1());
-		holder.tv2.setText(quadItem.getItrm2());
+		holder.tv2.setText(quadItem.getItem2());
 		holder.tv3.setText(quadItem.getItem3());
 		holder.tv4.setText(quadItem.getItem4());
 

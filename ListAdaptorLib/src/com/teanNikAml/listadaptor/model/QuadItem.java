@@ -2,7 +2,15 @@ package com.teanNikAml.listadaptor.model;
 
 public class QuadItem {
 	
-	private String item1,itrm2,item3,item4;
+	private String item1,item2,item3,item4;
+
+	public String getItem2() {
+		return item2;
+	}
+
+	public void setItem2(String item2) {
+		this.item2 = item2;
+	}
 
 	public String getItem1() {
 		return item1;
@@ -12,13 +20,7 @@ public class QuadItem {
 		this.item1 = item1;
 	}
 
-	public String getItrm2() {
-		return itrm2;
-	}
-
-	public void setItrm2(String itrm2) {
-		this.itrm2 = itrm2;
-	}
+	
 
 	public String getItem3() {
 		return item3;
