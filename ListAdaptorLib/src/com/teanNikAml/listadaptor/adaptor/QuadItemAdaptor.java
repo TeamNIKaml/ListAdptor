@@ -17,8 +17,6 @@ public class QuadItemAdaptor extends BaseAdapter {
 	private Context context;
 	private List<QuadItem> quadItemList;
 
-	
-
 	public QuadItemAdaptor(Context context) {
 		this.context = context;
 	}
@@ -55,11 +53,10 @@ public class QuadItemAdaptor extends BaseAdapter {
 		ViewHolder holder = null;
 
 		if (convertView == null) {
-			
+
 			LayoutInflater li = (LayoutInflater) context
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			convertView = li.inflate(R.layout.quad_item, group,
-					false);
+			convertView = li.inflate(R.layout.quad_item, group, false);
 			holder = new ViewHolder();
 
 			holder.tv1 = (TextView) convertView.findViewById(R.id.item1);
@@ -73,14 +70,10 @@ public class QuadItemAdaptor extends BaseAdapter {
 			holder = (ViewHolder) convertView.getTag();
 		}
 
-		
-QuadItem quadItem = quadItemList.get(postion);
-	
-
-		holder.tv1.setText(quadItem.getItem1());
-		holder.tv2.setText(quadItem.getItem2());
-		holder.tv3.setText(quadItem.getItem3());
-		holder.tv4.setText(quadItem.getItem4());
+		holder.tv1.setText(quadItemList.get(postion).getItem1());
+		holder.tv2.setText(quadItemList.get(postion).getItem2());
+		holder.tv3.setText(quadItemList.get(postion).getItem3());
+		holder.tv4.setText(quadItemList.get(postion).getItem4());
 
 		return convertView;
 	}
@@ -91,4 +84,3 @@ QuadItem quadItem = quadItemList.get(postion);
 	}
 
 }
-

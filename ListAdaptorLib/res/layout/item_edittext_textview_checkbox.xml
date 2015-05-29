@@ -7,7 +7,7 @@
    
 
     <TextView
-        android:id="@+id/itemTextView"
+        android:id="@+id/textView_item"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:gravity="left"
@@ -17,7 +17,7 @@
     </TextView>
     
      <EditText
-         android:id="@+id/itemEditText"
+         android:id="@+id/editText_item"
          android:layout_width="300dp"
          android:layout_height="wrap_content"
          android:layout_weight="1"
@@ -29,7 +29,7 @@
     
 
     <CheckBox
-        android:id="@+id/itemCheckbox"
+        android:id="@+id/checkbox_item"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_gravity="right"
