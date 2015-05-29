@@ -1,4 +1,4 @@
-package com.teanNikAml.listadaptor;
+package com.teanNikAml.listadaptor.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
