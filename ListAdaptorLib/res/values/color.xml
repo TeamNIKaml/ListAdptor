@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="editTextColor">#000000</color>
+    <color name="listTextColor">#FFFFFF</color>
+    <color name="list_divider">#a6c068</color>
+  
+ 
+    <color name="list_item_background">#8ba76b</color>
+  
+
+</resources>
