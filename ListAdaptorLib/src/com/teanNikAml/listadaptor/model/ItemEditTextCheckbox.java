@@ -2,7 +2,13 @@ package com.teanNikAml.listadaptor.model;
 
 public class ItemEditTextCheckbox {
 	
-	private String itemEdittext,itemTextView;
+	private String itemEdittext,itemTextView,hint="Comments";
+	public String getHint() {
+		return hint;
+	}
+	public void setHint(String hint) {
+		this.hint = hint;
+	}
 	private Boolean checkboxItem;
 	
 	

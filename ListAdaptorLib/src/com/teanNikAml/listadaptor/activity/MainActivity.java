@@ -10,8 +10,11 @@ import android.view.MenuItem;
 import android.widget.ListView;
 
 import com.teanNikAml.listadaptor.model.DualItem;
+import com.teanNikAml.listadaptor.model.ItemEditTextCheckbox;
 import com.teanNikAml.listadaptor.model.Mapper;
 import com.teanNikAml.listadaptor.model.PentaItem;
+import com.teanNikAml.listadaptor.model.QuadItem;
+import com.teanNikAml.listadaptor.model.SingleItem;
 import com.teanNikAml.listadaptor.model.TripleItem;
 
 public class MainActivity extends Activity {
@@ -46,20 +49,10 @@ public class MainActivity extends Activity {
 		// TODO Auto-generated method stub
 		ItemList = new ArrayList<Object>();
 		
-		
-		PentaItem pentaItem;
-		for (int i = 0; i < 15; i++) {
-			pentaItem = new PentaItem();
-			pentaItem.setItem1("item1 " + String.valueOf(i));
-			pentaItem.setItem2("item2 " + String.valueOf(i));
-			pentaItem.setItem3("item3 " + String.valueOf(i));
-			pentaItem.setItem4("item4 " + String.valueOf(i));
-			pentaItem.setItem5("item5 " + String.valueOf(i));
-			ItemList.add(pentaItem);
-		}
+		System.out.println("setdata");
 		
 		
-		/*SingleItem singleItem;
+	/*	SingleItem singleItem;
 
 		for (int i = 0; i < 15; i++) {
 			singleItem = new SingleItem();
@@ -82,7 +75,7 @@ public class MainActivity extends Activity {
 		
 		
 		
-		/*TripleItem tripleItem;
+	/*	TripleItem tripleItem;
 
 		for (int i = 0; i < 15; i++) {
 			tripleItem = new TripleItem();
@@ -92,31 +85,7 @@ public class MainActivity extends Activity {
 			
 
 			ItemList.add(tripleItem);
-		}
-		*/
-		
-		
-		/*ItemEditTextCheckbox itemEditTextCheckbox;
-		
-		Boolean b;
-		
-		for (int i = 0; i < 15; i++) {
-			itemEditTextCheckbox = new ItemEditTextCheckbox();
-			
-			if(i%2==0)
-				b = true;
-			else
-				b = false;
-			
-			itemEditTextCheckbox.setCheckboxItem(b);
-			itemEditTextCheckbox.setItemEdittext("edit text");
-			itemEditTextCheckbox.setItemTextView("text view");
-			ItemList.add(itemEditTextCheckbox);
-			
 		}*/
-			
-			
-		
 		
 		
 		/*QuadItem quadItem;
@@ -130,6 +99,41 @@ public class MainActivity extends Activity {
 
 			ItemList.add(quadItem);
 		}*/
+		
+		/*	PentaItem pentaItem;
+		for (int i = 0; i < 15; i++) {
+			pentaItem = new PentaItem();
+			pentaItem.setItem1("item1 " + String.valueOf(i));
+			pentaItem.setItem2("item2 " + String.valueOf(i));
+			pentaItem.setItem3("item3 " + String.valueOf(i));
+			pentaItem.setItem4("item4 " + String.valueOf(i));
+			pentaItem.setItem5("item5 " + String.valueOf(i));
+			ItemList.add(pentaItem);
+		}*/
+		
+	ItemEditTextCheckbox itemEditTextCheckbox;
+		
+		Boolean b;
+		
+		for (int i = 0; i < 15; i++) {
+			itemEditTextCheckbox = new ItemEditTextCheckbox();
+			
+			if(i%2==0)
+				b = true;
+			else
+				b = false;
+			
+			itemEditTextCheckbox.setCheckboxItem(b);
+		//	itemEditTextCheckbox.setItemEdittext("edit text");
+			itemEditTextCheckbox.setItemTextView("text view");
+			ItemList.add(itemEditTextCheckbox);
+			
+		}
+		
+		System.out.println(ItemList.size());
+		
+		
+		
 	}
 
 	@Override

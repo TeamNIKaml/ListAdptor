@@ -27,7 +27,7 @@ public class Mapper {
 	
 	public BaseAdapter getAdapter(List<Object> ItemList)	{
 		
-		
+		System.out.println("getAdapter");
 		
 		if(ItemList.get(0) instanceof QuadItem)
 		{
@@ -47,7 +47,7 @@ public class Mapper {
 		quadItemAdaptor.setQuadItemList(quadItemList);
 		return quadItemAdaptor;
 		}
-		else if(ItemList.get(0) instanceof ItemEditTextCheckBoxAdaptor)
+		else if(ItemList.get(0) instanceof ItemEditTextCheckbox)
 		{
 			ItemEditTextCheckbox itemEditTextCheckbox;
 			
@@ -60,6 +60,8 @@ public class Mapper {
 				
 			}
 			
+			
+			System.out.println("inside ItemEditTextCheckBoxAdaptor mapper  ");
 			
 			ItemEditTextCheckBoxAdaptor adaptor = new ItemEditTextCheckBoxAdaptor(context, itemList1);
 			

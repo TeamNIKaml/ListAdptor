@@ -115,6 +115,7 @@ public class ItemEditTextCheckBoxAdaptor extends BaseAdapter {
 		if (holder.editText != null) {
 
 			holder.editText.setText(itemEditTextCheckbox.getItemEdittext());
+			holder.editText.setHint(itemEditTextCheckbox.getHint());
 		}
 
 		return convertView;
