@@ -3,6 +3,7 @@ package com.teanNikAml.listadaptor.adaptor;
 import java.util.List;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,13 +11,29 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.teanNikAml.listadaptor.activity.R;
-import com.teanNikAml.listadaptor.model.QuadItem;
 import com.teanNikAml.listadaptor.model.TripleItem;
 
-public class TripleItemAdaptor  extends BaseAdapter {
+public class TripleItemAdaptor extends BaseAdapter {
 
 	private Context context;
 	private List<TripleItem> itemList;
+	private String backgroundColor, textColor;
+
+	public String getBackgroundColor() {
+		return backgroundColor;
+	}
+
+	public void setBackgroundColor(String backgroundColor) {
+		this.backgroundColor = backgroundColor;
+	}
+
+	public String getTextColor() {
+		return textColor;
+	}
+
+	public void setTextColor(String textColor) {
+		this.textColor = textColor;
+	}
 
 	public TripleItemAdaptor(Context context) {
 		this.context = context;
@@ -40,8 +57,6 @@ public class TripleItemAdaptor  extends BaseAdapter {
 		return itemList.get(postion).hashCode();
 	}
 
-	
-
 	public List<TripleItem> getItemList() {
 		return itemList;
 	}
@@ -60,12 +75,16 @@ public class TripleItemAdaptor  extends BaseAdapter {
 			LayoutInflater li = (LayoutInflater) context
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			convertView = li.inflate(R.layout.triple_item, group, false);
+			convertView.setBackgroundColor(Color.parseColor(backgroundColor));
 			holder = new ViewHolder();
 
 			holder.tv1 = (TextView) convertView.findViewById(R.id.item1);
 			holder.tv2 = (TextView) convertView.findViewById(R.id.item2);
 			holder.tv3 = (TextView) convertView.findViewById(R.id.item3);
-		
+
+			holder.tv1.setTextColor(Color.parseColor(textColor));
+			holder.tv2.setTextColor(Color.parseColor(textColor));
+			holder.tv3.setTextColor(Color.parseColor(textColor));
 
 			convertView.setTag(holder);
 
@@ -76,7 +95,6 @@ public class TripleItemAdaptor  extends BaseAdapter {
 		holder.tv1.setText(itemList.get(postion).getItem1());
 		holder.tv2.setText(itemList.get(postion).getItem2());
 		holder.tv3.setText(itemList.get(postion).getItem3());
-		
 
 		return convertView;
 	}

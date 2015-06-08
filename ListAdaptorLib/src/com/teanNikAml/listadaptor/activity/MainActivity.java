@@ -4,19 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
 
+import com.teanNikAml.listadaptor.model.ItemEditTextCheckbox;
 import com.teanNikAml.listadaptor.model.Mapper;
-import com.teanNikAml.listadaptor.model.SingleItem;
 
 public class MainActivity extends Activity {
 
 	private ListView listView;
 
 	private Mapper mapper;
+	
+	
 
 	private List<Object> ItemList;
 	
@@ -52,13 +55,13 @@ public class MainActivity extends Activity {
 		System.out.println("setdata");
 		
 		
-		SingleItem singleItem;
+		/*SingleItem singleItem;
 
 		for (int i = 0; i < 15; i++) {
 			singleItem = new SingleItem();
 			singleItem.setItem("item "+String.valueOf(i));
 			ItemList.add(singleItem);
-		}
+		}*/
 		
 		
 		
@@ -75,7 +78,7 @@ public class MainActivity extends Activity {
 		
 		
 		
-	/*	TripleItem tripleItem;
+		/*TripleItem tripleItem;
 
 		for (int i = 0; i < 15; i++) {
 			tripleItem = new TripleItem();
@@ -85,10 +88,10 @@ public class MainActivity extends Activity {
 			
 
 			ItemList.add(tripleItem);
-		}*/
+		}
+		*/
 		
-		
-		/*QuadItem quadItem;
+	/*	QuadItem quadItem;
 
 		for (int i = 0; i < 15; i++) {
 			quadItem = new QuadItem();
@@ -100,7 +103,7 @@ public class MainActivity extends Activity {
 			ItemList.add(quadItem);
 		}*/
 		
-		/*	PentaItem pentaItem;
+	/*		PentaItem pentaItem;
 		for (int i = 0; i < 15; i++) {
 			pentaItem = new PentaItem();
 			pentaItem.setItem1("item1 " + String.valueOf(i));
@@ -111,7 +114,7 @@ public class MainActivity extends Activity {
 			ItemList.add(pentaItem);
 		}*/
 		
-	/*ItemEditTextCheckbox itemEditTextCheckbox;
+	ItemEditTextCheckbox itemEditTextCheckbox;
 		
 		Boolean b;
 		
@@ -128,9 +131,9 @@ public class MainActivity extends Activity {
 			itemEditTextCheckbox.setItemTextView("text view");
 			ItemList.add(itemEditTextCheckbox);
 			
-		}*/
+		}
 		
-		System.out.println(ItemList.size());
+	
 		
 		
 		

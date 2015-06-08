@@ -76,12 +76,12 @@ public class SingleItemAdaptor extends BaseAdapter {
 			LayoutInflater li = (LayoutInflater) context
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			convertView = li.inflate(R.layout.single_item, group, false);
-			
+
 			convertView.setBackgroundColor(Color.parseColor(backgroundColor));
 			holder = new ViewHolder();
 
 			holder.tv1 = (TextView) convertView.findViewById(R.id.item1);
-			
+
 			holder.tv1.setTextColor(Color.parseColor(textColor));
 
 			convertView.setTag(holder);

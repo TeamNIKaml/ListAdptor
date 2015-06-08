@@ -9,7 +9,12 @@
     <dimen name="triple_item_layout_width">334dp</dimen>
     <dimen name="quad_item_padding">17dp</dimen>
     <dimen name="quad_item_layout_width">250dp</dimen>
-    <dimen name="penta_item_padding">10dp</dimen>
+    <dimen name="penta_item_padding">17dp</dimen>
     <dimen name="penta_item_layout_width">200dp</dimen>
+    <dimen name="item_edittext_textview_padding">17dp</dimen>
+    <dimen name="item_edittext_textview_layout_width_textview">500dp</dimen>
+    <dimen name="item_edittext_textview_layout_width_textview_large">751dp</dimen>
+    <dimen name="item_edittext_textview_layout_width_edittext">341dp</dimen>
+    <dimen name="item_edittext_textview_layout_width_checkbox">68dp</dimen>
 
 </resources>

@@ -4,36 +4,30 @@
     android:layout_height="match_parent"
     android:orientation="horizontal" >
 
-   
-
     <TextView
         android:id="@+id/textView_item"
-        android:layout_width="300dp"
+        android:layout_width="@dimen/item_edittext_textview_layout_width_textview"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="10dp"
+        android:gravity="left"
+       android:padding="@dimen/item_edittext_textview_padding"
         android:text="@string/app_name"
-        android:textSize="22sp" 
-        android:textColor="@android:color/black"
-        >
+        android:textSize="@dimen/textSize_edit_text" >
     </TextView>
-    
-     <EditText
-         android:id="@+id/editText_item"
-         android:layout_width="250dp"
-         android:layout_height="wrap_content"
-          android:textSize="22sp" 
-          android:hint="@string/app_name"
-        android:textColor="@android:color/black">
-     
+
+    <EditText
+        android:id="@+id/editText_item"
+        android:layout_width="@dimen/item_edittext_textview_layout_width_edittext"
+        android:layout_height="wrap_content"
+        android:hint="@string/app_name"
+        android:padding="@dimen/item_edittext_textview_padding"
+         android:textSize="@dimen/textSize_edit_text" >
     </EditText>
-    
 
     <CheckBox
         android:id="@+id/checkbox_item"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/item_edittext_textview_layout_width_checkbox"
+        android:layout_height="wrap_content"
         android:layout_gravity="right"
-         android:padding="30dp" />
+        android:padding="@dimen/item_edittext_textview_padding" />
 
 </LinearLayout>

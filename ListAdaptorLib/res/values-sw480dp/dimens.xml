@@ -11,5 +11,10 @@
     <dimen name="quad_item_layout_width">120dp</dimen>
     <dimen name="penta_item_padding">8dp</dimen>
     <dimen name="penta_item_layout_width">96dp</dimen>
+    <dimen name="item_edittext_textview_padding">8dp</dimen>
+    <dimen name="item_edittext_textview_layout_width_textview">240dp</dimen>
+    <dimen name="item_edittext_textview_layout_width_textview_large">440dp</dimen>
+    <dimen name="item_edittext_textview_layout_width_edittext">200dp</dimen>
+    <dimen name="item_edittext_textview_layout_width_checkbox">40dp</dimen>
 
 </resources>

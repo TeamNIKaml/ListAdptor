@@ -1,5 +1,6 @@
 <resources>
-    <dimen name="textSize_edit_text">13sp</dimen>
+
+    <dimen name="textSize_edit_text">13sp</dimen>
     <dimen name="textSize_button">15sp</dimen>
     <dimen name="single_item_padding">5dp</dimen>
     <dimen name="dual_item_padding">5dp</dimen>
@@ -10,5 +11,10 @@
     <dimen name="quad_item_layout_width">80dp</dimen>
     <dimen name="penta_item_padding">5dp</dimen>
     <dimen name="penta_item_layout_width">64dp</dimen>
+    <dimen name="item_edittext_textview_padding">5dp</dimen>
+    <dimen name="item_edittext_textview_layout_width_textview">160dp</dimen>
+    <dimen name="item_edittext_textview_layout_width_textview_large">293dp</dimen>
+    <dimen name="item_edittext_textview_layout_width_edittext">133dp</dimen>
+    <dimen name="item_edittext_textview_layout_width_checkbox">27dp</dimen>
 
 </resources>
