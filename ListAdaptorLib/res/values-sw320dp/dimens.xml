@@ -1,61 +1,14 @@
 <resources>
-
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    
-    
-    
-    <dimen name="textSize_edit_text">22sp</dimen>
-      <dimen name="textSize_button">28sp</dimen>
-    
-    
-
-    <!-- Login layout dimension -->
-
-    <dimen name="layout_marginTop_login">200dp</dimen>
-    <dimen name="layout_marginTop_login_password">18dp</dimen>
-    <dimen name="layout_marginRight_login">18dp</dimen>
-    <dimen name="layout_marginLeft_login">18dp</dimen>
-    <dimen name="layout_marginLeft_loginbutton">200dp</dimen>
-    <dimen name="android_padding_login">15dp</dimen>
-    <dimen name="android_textSize_login">20sp</dimen>
-
-    <!-- Project Main layout dimension -->
-    <dimen name="layout_marginTop_projectMain">15dp</dimen>
-    <dimen name="layout_marginRight_projectMain">20dp</dimen>
-    <dimen name="layout_marginLeft_projectMain">20dp</dimen>
-    <dimen name="android_textSize_projectMain">17sp</dimen>
-    <dimen name="android_padding_projectMain">10dp</dimen>
-
-    <!-- Project Start -->
-
-    <dimen name="layout_marginTop_TextView_projectStart">0dp</dimen>
-    <dimen name="layout_marginTop_Button_projectStart">6dp</dimen>
-    <dimen name="layout_marginRight_projectStart">24dp</dimen>
-    <dimen name="layout_marginLeft_projectStart">24dp</dimen>
-    <dimen name="android_textSize_projectStart">17sp</dimen>
-    <dimen name="android_padding_projectStart">3dp</dimen>
-
-    <!-- Button dimension -->
-    <dimen name="button_radius">7dp</dimen>
-    <dimen name="editText_radius">7dp</dimen>
-    
-    
-    
-     <!-- Dialog report -->
-
-    <dimen name="layout_marginTop_dialog_report">16dp</dimen>
-    <dimen name="layout_marginRight_dialog_report">24dp</dimen>
-    <dimen name="layout_marginLeft_dialog_report">24dp</dimen>
-    <dimen name="android_padding__dialog_report">3dp</dimen>
-     <dimen name="layout_marginLeft_dialog_report_button">120dp</dimen>
-    
-     <dimen name="android_textSize_dialog_report">17sp</dimen>
-
-
-    
-    
-    
+    <dimen name="textSize_edit_text">13sp</dimen>
+    <dimen name="textSize_button">15sp</dimen>
+    <dimen name="single_item_padding">5dp</dimen>
+    <dimen name="dual_item_padding">5dp</dimen>
+    <dimen name="dual_item_layout_width">160dp</dimen>
+    <dimen name="triple_item_padding">5dp</dimen>
+    <dimen name="triple_item_layout_width">107dp</dimen>
+    <dimen name="quad_item_padding">5dp</dimen>
+    <dimen name="quad_item_layout_width">80dp</dimen>
+    <dimen name="penta_item_padding">5dp</dimen>
+    <dimen name="penta_item_layout_width">64dp</dimen>
 
 </resources>

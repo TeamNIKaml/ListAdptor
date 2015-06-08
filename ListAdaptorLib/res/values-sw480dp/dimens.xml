@@ -1,0 +1,15 @@
+<resources>
+
+    <dimen name="textSize_edit_text">19sp</dimen>
+    <dimen name="textSize_button">22.4sp</dimen>
+    <dimen name="single_item_padding">10dp</dimen>
+    <dimen name="dual_item_padding">8dp</dimen>
+    <dimen name="dual_item_layout_width">240dp</dimen>
+    <dimen name="triple_item_padding">8dp</dimen>
+    <dimen name="triple_item_layout_width">160dp</dimen>
+    <dimen name="quad_item_padding">8dp</dimen>
+    <dimen name="quad_item_layout_width">120dp</dimen>
+    <dimen name="penta_item_padding">8dp</dimen>
+    <dimen name="penta_item_layout_width">96dp</dimen>
+
+</resources>

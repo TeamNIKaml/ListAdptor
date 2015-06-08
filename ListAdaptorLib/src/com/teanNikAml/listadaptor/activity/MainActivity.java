@@ -9,13 +9,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
 
-import com.teanNikAml.listadaptor.model.DualItem;
-import com.teanNikAml.listadaptor.model.ItemEditTextCheckbox;
 import com.teanNikAml.listadaptor.model.Mapper;
-import com.teanNikAml.listadaptor.model.PentaItem;
-import com.teanNikAml.listadaptor.model.QuadItem;
 import com.teanNikAml.listadaptor.model.SingleItem;
-import com.teanNikAml.listadaptor.model.TripleItem;
 
 public class MainActivity extends Activity {
 
@@ -24,6 +19,8 @@ public class MainActivity extends Activity {
 	private Mapper mapper;
 
 	private List<Object> ItemList;
+	
+	//v.setBackgroundColor(context.getResources().getColor(R.color.enquiries_list_background));
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +36,9 @@ public class MainActivity extends Activity {
 		mapper = new Mapper(getApplicationContext());
 
 		setData();
+		
+		mapper.setBackGroundColor("#8ba76b");
+		mapper.setTextColor("#ffffff");
 
 		listView.setAdapter(mapper.getAdapter(ItemList));
 		
@@ -52,13 +52,13 @@ public class MainActivity extends Activity {
 		System.out.println("setdata");
 		
 		
-	/*	SingleItem singleItem;
+		SingleItem singleItem;
 
 		for (int i = 0; i < 15; i++) {
 			singleItem = new SingleItem();
 			singleItem.setItem("item "+String.valueOf(i));
 			ItemList.add(singleItem);
-		}*/
+		}
 		
 		
 		
@@ -111,7 +111,7 @@ public class MainActivity extends Activity {
 			ItemList.add(pentaItem);
 		}*/
 		
-	ItemEditTextCheckbox itemEditTextCheckbox;
+	/*ItemEditTextCheckbox itemEditTextCheckbox;
 		
 		Boolean b;
 		
@@ -128,7 +128,7 @@ public class MainActivity extends Activity {
 			itemEditTextCheckbox.setItemTextView("text view");
 			ItemList.add(itemEditTextCheckbox);
 			
-		}
+		}*/
 		
 		System.out.println(ItemList.size());
 		

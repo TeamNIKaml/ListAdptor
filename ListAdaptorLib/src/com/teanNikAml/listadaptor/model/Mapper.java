@@ -19,7 +19,25 @@ public class Mapper {
 	
 	private Context context;
 	
+	private String backGroundColor ="#FFFFFF",textColor="#000000";
 	
+	
+	public String getTextColor() {
+		return textColor;
+	}
+
+	public void setTextColor(String textColor) {
+		this.textColor = textColor;
+	}
+
+	public String getBackGroundColor() {
+		return backGroundColor;
+	}
+
+	public void setBackGroundColor(String backGroundColor) {
+		this.backGroundColor = backGroundColor;
+	}
+
 	public Mapper(Context context) {
 		super();
 		this.context = context;
@@ -85,6 +103,8 @@ public class Mapper {
 			
 			
 			SingleItemAdaptor adaptor = new SingleItemAdaptor(context);
+			adaptor.setBackgroundColor(backGroundColor);
+			adaptor.setTextColor(textColor);
 			adaptor.setSingleItemList(itemList1);
 			
 			return adaptor;

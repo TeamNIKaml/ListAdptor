@@ -3,6 +3,7 @@ package com.teanNikAml.listadaptor.adaptor;
 import java.util.List;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,24 @@ public class SingleItemAdaptor extends BaseAdapter {
 
 	private Context context;
 	private List<SingleItem> singleItemList;
+	private String backgroundColor;
+	private String textColor;
+
+	public String getTextColor() {
+		return textColor;
+	}
+
+	public void setTextColor(String textColor) {
+		this.textColor = textColor;
+	}
+
+	public String getBackgroundColor() {
+		return backgroundColor;
+	}
+
+	public void setBackgroundColor(String backgroundColor) {
+		this.backgroundColor = backgroundColor;
+	}
 
 	public SingleItemAdaptor(Context context) {
 		this.context = context;
@@ -57,9 +76,13 @@ public class SingleItemAdaptor extends BaseAdapter {
 			LayoutInflater li = (LayoutInflater) context
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			convertView = li.inflate(R.layout.single_item, group, false);
+			
+			convertView.setBackgroundColor(Color.parseColor(backgroundColor));
 			holder = new ViewHolder();
 
 			holder.tv1 = (TextView) convertView.findViewById(R.id.item1);
+			
+			holder.tv1.setTextColor(Color.parseColor(textColor));
 
 			convertView.setTag(holder);
 
