@@ -17,7 +17,7 @@ public class QuadItemAdaptor extends BaseAdapter {
 
 	private Context context;
 	private List<QuadItem> quadItemList;
-	private String backgroundColor, textColor;
+	private String backgroundColor, textColor ;
 
 	public String getBackgroundColor() {
 		return backgroundColor;
@@ -83,6 +83,8 @@ public class QuadItemAdaptor extends BaseAdapter {
 			holder.tv3 = (TextView) convertView.findViewById(R.id.item3);
 			holder.tv4 = (TextView) convertView.findViewById(R.id.item4);
 			
+			
+			System.out.println("textColor:"+Color.parseColor(textColor));
 			
 			holder.tv1.setTextColor(Color.parseColor(textColor));
 			holder.tv2.setTextColor(Color.parseColor(textColor));

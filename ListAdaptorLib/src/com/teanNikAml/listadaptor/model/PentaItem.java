@@ -3,6 +3,15 @@ package com.teanNikAml.listadaptor.model;
 public class PentaItem {
 	
 	private String item1,item2,item3,item4,item5;
+	private int heading = 0;
+
+	public int getHeading() {
+		return heading;
+	}
+
+	public void setHeading(int heading) {
+		this.heading = heading;
+	}
 
 	public String getItem1() {
 		return item1;

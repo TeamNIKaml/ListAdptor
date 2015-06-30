@@ -3,6 +3,13 @@ package com.teanNikAml.listadaptor.model;
 public class ItemEditTextCheckbox {
 	
 	private String itemEdittext,itemTextView,hint="Comments";
+	private int heading = 0;
+	public int getHeading() {
+		return heading;
+	}
+	public void setHeading(int heading) {
+		this.heading = heading;
+	}
 	public String getHint() {
 		return hint;
 	}

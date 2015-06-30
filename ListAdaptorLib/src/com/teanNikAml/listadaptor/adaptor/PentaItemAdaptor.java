@@ -110,7 +110,7 @@ public class PentaItemAdaptor extends BaseAdapter {
 		return convertView;
 	}
 
-	static class ViewHolder {
+	private static class ViewHolder {
 		private TextView tv1, tv2, tv3, tv4,tv5;
 
 	}

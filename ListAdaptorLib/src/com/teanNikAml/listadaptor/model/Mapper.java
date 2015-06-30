@@ -20,6 +20,8 @@ public class Mapper {
 	private Context context;
 
 	private String backGroundColor = "#FFFFFF", textColor = "#000000";
+	
+//	private String backgroundColorHeading = "#FFFFFF",textColorHeading = "#000000"; 
 
 	public String getTextColor() {
 		return textColor;
@@ -190,4 +192,5 @@ public class Mapper {
 		};
 	}
 
+	
 }

@@ -1,23 +1,25 @@
-package com.teanNikAml.listadaptor.activity;
+/*package com.teanNikAml.listadaptor.activity;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
 
-import com.teanNikAml.listadaptor.model.ItemEditTextCheckbox;
 import com.teanNikAml.listadaptor.model.Mapper;
+import com.teanNikAml.listadaptor.model.QuadItem;
+import com.teanNikAml.listadaptor.model.SingleItem;
 
 public class MainActivity extends Activity {
 
 	private ListView listView;
 
 	private Mapper mapper;
+	
+	
 	
 	
 
@@ -35,13 +37,16 @@ public class MainActivity extends Activity {
 	private void init() {
 		// TODO Auto-generated method stub
 		listView = (ListView) findViewById(R.id.listView1);
-
+//listView.setDividerHeight(15);
+		
 		mapper = new Mapper(getApplicationContext());
 
 		setData();
 		
-		mapper.setBackGroundColor("#8ba76b");
-		mapper.setTextColor("#ffffff");
+	//	mapper.setBackGroundColor("#8ba76b");
+	//	mapper.setTextColor("#ffffff");//879d51
+	//	mapper.setBackgroundColorHeading("#879d51");
+	//	mapper.setTextColorHeading("#ffffff");
 
 		listView.setAdapter(mapper.getAdapter(ItemList));
 		
@@ -55,17 +60,31 @@ public class MainActivity extends Activity {
 		System.out.println("setdata");
 		
 		
-		/*SingleItem singleItem;
+		SingleItem singleItem = new SingleItem();
+		singleItem.setItem("item heading 1");
+	
+		ItemList.add(singleItem);
 
 		for (int i = 0; i < 15; i++) {
 			singleItem = new SingleItem();
 			singleItem.setItem("item "+String.valueOf(i));
 			ItemList.add(singleItem);
-		}*/
+		}
+		
+		singleItem.setItem("item heading 2");
+		ItemList.add(singleItem);
+		
+		
+		for (int i = 0; i < 15; i++) {
+			singleItem = new SingleItem();
+			singleItem.setItem("item "+String.valueOf(i));
+			ItemList.add(singleItem);
+		}
 		
 		
 		
-		/*DualItem dualItem;
+		
+		DualItem dualItem;
 
 		for (int i = 0; i < 15; i++) {
 			dualItem = new DualItem();
@@ -74,11 +93,11 @@ public class MainActivity extends Activity {
 			
 
 			ItemList.add(dualItem);
-		}*/
+		}
 		
 		
 		
-		/*TripleItem tripleItem;
+		TripleItem tripleItem;
 
 		for (int i = 0; i < 15; i++) {
 			tripleItem = new TripleItem();
@@ -89,9 +108,9 @@ public class MainActivity extends Activity {
 
 			ItemList.add(tripleItem);
 		}
-		*/
 		
-	/*	QuadItem quadItem;
+		
+		QuadItem quadItem;
 
 		for (int i = 0; i < 15; i++) {
 			quadItem = new QuadItem();
@@ -101,9 +120,9 @@ public class MainActivity extends Activity {
 			quadItem.setItem4("item4 " + String.valueOf(i));
 
 			ItemList.add(quadItem);
-		}*/
+		}
 		
-	/*		PentaItem pentaItem;
+			PentaItem pentaItem;
 		for (int i = 0; i < 15; i++) {
 			pentaItem = new PentaItem();
 			pentaItem.setItem1("item1 " + String.valueOf(i));
@@ -112,7 +131,7 @@ public class MainActivity extends Activity {
 			pentaItem.setItem4("item4 " + String.valueOf(i));
 			pentaItem.setItem5("item5 " + String.valueOf(i));
 			ItemList.add(pentaItem);
-		}*/
+		}
 		
 	ItemEditTextCheckbox itemEditTextCheckbox;
 		
@@ -157,4 +176,4 @@ public class MainActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-}
+}*/
